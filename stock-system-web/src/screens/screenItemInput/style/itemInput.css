@@ -1,0 +1,100 @@
+.app-layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.items-container {
+  flex: 1;
+  min-width: 0;
+  padding: 30px;
+  overflow-y: auto;
+  color: white;
+}
+
+.items-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.items-header h1 {
+  font-size: 2rem;
+}
+
+.btn-new {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-new:hover {
+  background: #1d4ed8;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  );
+  gap: 20px;
+}
+
+.item-card {
+  background: #0f1d31;
+  border: 1px solid #1e3a5f;
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.item-card:hover {
+  transform: translateY(-4px);
+  border-color: #2563eb;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.movement-id {
+  color: #60a5fa;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-hour {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.card-body h3 {
+  margin-bottom: 10px;
+}
+
+.card-date {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.quantity-badge {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.quantity-badge.input {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
